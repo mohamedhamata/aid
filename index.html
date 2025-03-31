@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak, Meriem!</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #1e3c72, #2a5298); /* Deep blue gradient */
+            color: #ffd700;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            flex-direction: column;
+        }
+        .eid-message {
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px gold;
+        }
+        .show-letter-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            color: white;
+            background: gold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+            transition: 0.3s;
+        }
+        .show-letter-btn:hover {
+            background: #d4af37;
+        }
+        .letter {
+            display: none;
+            background: rgba(255, 248, 220, 0.95); /* Slightly transparent parchment */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+            width: 50%;
+            text-align: left;
+            border: 2px solid #ffd700;
+            position: relative;
+            z-index: 2;
+            margin-top: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #ffd700;
+        }
+        p {
+            font-size: 1.3em;
+            line-height: 1.6;
+            color: #1e3c72;
+        }
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #1e3c72;
+        }
+    </style>
+</head>
+<body>
+    <div class="eid-message">☾ Eid Mubarak, Meriem ❤</div>
+    <button class="show-letter-btn" onclick="showLetter()">See the Letter</button>
+    <div class="letter" id="letter">
+        <h1>☾ Eid Mubarak, My Love Meriem ❤</h1>
+        <p>My dearest Meriem,3id mobarek muah, kol 3am wnti bikhayer muah, t3aydi w tzidi muah , snin dayma nchlh , </p>
+        <p>On this blessed occasion of Eid, I want to remind you how deeply I cherish you. Your kindness, your beauty, and your presence make every moment in my life special. I am truly grateful to have you by my side.</p>
+        <p>May this Eid bring you endless happiness, peace, and all the love in the world. You are my greatest blessing, and I pray that our love continues to shine as brightly as the moon on this sacred night.</p>
+        <p>Forever yours,</p>
+        <p class="signature">mohamed</p>
+    </div>
+    <script>
+        function showLetter() {
+            document.getElementById('letter').style.display = 'block';
+            document.querySelector('.eid-message').style.display = 'none';
+            document.querySelector('.show-letter-btn').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
